@@ -1,0 +1,34 @@
+h1 {
+    /* размер шрифта */
+    font-size: 100px;
+    /* цвет */
+    color: blue;
+    /* внешний отступ */
+    margin: 0;
+    text-align: center;
+}
+
+.smallText {
+    font-size: 20px;
+}
+
+.green {
+    color: green;
+}
+
+.secondHeading {
+    color: red;
+}
+
+body {
+    background-color: aqua;
+    margin: 0;
+}
+
+.containerLink {
+    width: 50%;
+    height: 100px;
+    /* один из способ как отцентровать блочный элемент на странице добавить авто отступы по краям */
+    margin: auto;
+    background-color: black;
+}
