@@ -1,0 +1,45 @@
+.header>h1 {
+    font-size: 69px;
+    color: rgb(25, 76, 92);
+  }
+
+h1 {
+    font-size: 69px;
+    color: midnightblue;
+    margin:auto;
+    text-align: center;
+}
+
+body {
+    background-color: burlywood;
+    margin: 15;
+}
+
+.containerLink {
+    border: 2px dashed black;
+
+    display: block; 
+
+    background-color: white;
+
+    margin: 15;
+}
+
+.color {
+    color:purple;
+}
+
+.main > h4 > span {
+    color: darkred;
+    text-decoration: underline;
+    font-weight: bold;
+    /* font-size: 50px; */
+  }
+
+  .footer {
+    width: 20%;
+    height: 350px;
+    
+    /* четыре цифры: значения выставляются по часовой стрелки начиная с top/right/bottom/left */
+    padding: 0px 0px 0px 69%;
+  }
