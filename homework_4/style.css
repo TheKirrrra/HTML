@@ -11,7 +11,7 @@ h1 {
 }
 
 body {
-    background-color: burlywood;
+    background-color: rgb(122, 90, 207);
     margin: 15;
 }
 
@@ -20,19 +20,19 @@ body {
 
     display: block; 
 
-    background-color: white;
+    background-color: rgb(14, 10, 34);
 
     margin: 15;
 }
 
 .color {
-    color:purple;
+    color:rgb(227, 243, 84);
 }
 
 .main > h4 > span {
     color: darkred;
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: bold;  
     /* font-size: 50px; */
   }
 
@@ -42,4 +42,51 @@ body {
     
     /* четыре цифры: значения выставляются по часовой стрелки начиная с top/right/bottom/left */
     padding: 0px 0px 0px 69%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    background-color: rgb(14, 10, 34);
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap;  */
+    justify-content: space-evenly;
+    /* дополнительное расстояние между элементами */
+    /* gap: 40px; */
+    row-gap: 60px;
+    column-gap: 30px; 
+    height: 350px;
+  }
+  
+  .container>div:last-child {
+    background-color: rgb(193, 235, 80);
+    color: #fff;
+  }
+  
+  .container>div:first-child {
+    background-color: rgb(222, 253, 85);
+  }
+  
+  .container>div:first-child:hover {
+    background-color: darkred;
+  }
+  
+  .container>div:last-child:hover {
+    background-color: darkblue;
+  }
+  
+  .redBox {
+    background-color: rgb(215, 255, 72);
+    width: auto;
+    height: 20px;
+   border-radius: 0px;
+    margin: 20px;
+  }
+  
+  .redBox:hover {
+    background-color: rgb(46, 32, 97);
+    height: 20px;
+    width: auto;
   }
