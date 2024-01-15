@@ -6,7 +6,7 @@
 header {
   position: sticky;
   top: 0px;
-  padding: 30px;
+  padding: 10px;
   /* min-height: 69px; */
   width: 100%;
   display: flex;
@@ -120,6 +120,7 @@ body {
   @media screen and (max-width: 390px) {
     header>h3 {
       display: none;
+      overflow: auto;
     }
   
     header {
