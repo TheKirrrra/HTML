@@ -118,15 +118,21 @@ body {
   }
 
   @media screen and (max-width: 390px) {
-    header>h3 {
-      display: none;
-    }
-
     header {
-      overflow: auto;
+      padding: 5px;
     }
+  
+    .navLogo, .navPlay img, .navOscar img {
+      width: 50%; /* Уменьшение размера изображений */
+    }
+  
+    .navInput {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
   
     header {
       background-color: brown;
     }
-  }
+  
