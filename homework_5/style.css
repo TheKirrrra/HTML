@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  padding: 30px;
+  min-height: 69px;
+  width: 100%;
+  display: flex;
+  background-image: url(/HTML/homework_5/imagebanner.jpeg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center; 
+  align-items: center; 
+}
+
+nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+nav>div {
+  display: flex;
+}
+
+nav img {
+  margin-right: 10px;
+}
+
+h3 {
+  color: white;
+  margin: 0;
+}
+
+header > h3:last-child {
+  color: chartreuse;
+  margin: 0;
+}
+
+header > h1:hover {
+  text-decoration: underline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+.imgContainer {
+    padding: 15px;
+    width: 300px;
+    height: 200px;
+    /* обрезает то, что не попало под размер контейнера */
+    overflow: hidden;
+  }
+  .imgContainer>img {
+    width: 100%;
+    height: 100%;
+    /* contain не обрезая картинку, помещает ее в контейнер, оставляя свободное место */
+    /* cover обрезает картинку */
+    /* fill растягивает картинку */
+    object-fit: cover;
+  }
+
+  .gallery {
+    justify-content: center;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  footer {
+    height: 100px;
+    background-color: darkred;
+    padding: 20px;
+  }
+  
+  /* медиа запросами мы добавляем специфические css свойства при изменении пропорций видимой области в браузере */
+  /* d  */
+  
+  /* в данном примере на экранах меньше по ширине, чем 1024px будут отображаться свойства, написанные ниже */
+  @media screen and (max-width: 1024px) {
+    header {
+      background-color: rgb(165, 118, 42);
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    header>h3 {
+      display: none;
+    }
+  
+    header {
+      background-color: brown;
+    }
+  }
