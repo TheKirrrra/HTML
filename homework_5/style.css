@@ -62,28 +62,35 @@ body {
     justify-content: flex-start;
   }
 
-.imgContainer {
-    padding: 15px;
-    width: 300px;
-    height: 200px;
-    /* обрезает то, что не попало под размер контейнера */
+  .galleryGrid {
+    display: grid;
+    /* можно указывать размер в пикселях */
+    /* grid-template-columns: 200px 200px 600px; */
+    /* количество значений равно числу колонок */
+    /* значение можно указывать также во фреймах (долях) от ширины*/
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* auto-fill создает пустые колонки если места не хватает, auto-fit схлопывает пустые колонки */
+    /* minmax принимает два параметра, первый минимальная величина, вторая максимальная */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  
+  .imgContainerGrid {
+    width: 100%;
     overflow: hidden;
   }
-  .imgContainer>img {
+  
+  .imgContainerGrid>img {
     width: 100%;
     height: 100%;
     /* contain не обрезая картинку, помещает ее в контейнер, оставляя свободное место */
     /* cover обрезает картинку */
     /* fill растягивает картинку */
     object-fit: cover;
-  }
-
-  .gallery {
-    justify-content: center;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
   }
 
   main {
