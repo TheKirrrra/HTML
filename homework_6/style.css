@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 15px;
+}
+
+.poster {
+    height: 300px;
+}
+
+.rating {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.ticket {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+}
+
+.positive {
+    background-color: green;
+}
+
+.negative {
+background-color: red;
+}
