@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lesson_12/toDoList/style.css">
+    <script defer src="/lesson_12/toDoList/toDoList.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Wishlist</h1>
+    <label>What i want</label>
+    <p>things to do</p>
+    <form id="form">
+        <input type="text" placeholder="What i want?" required name ="wish">
+        <input type="text" placeholder="Amount of what i want" required name ="amount">
+        <button type="submit" class="btn">Пожелать</button>
+    </form>
+    <div class="btnContainer">
+        <button id="btnClearLast">Убрать последнее</button>
+        <button id="btnClearList">Очистить список</button>
+
+    </div>
+    <div id="wishList"></div>
+</body>
+</html>
